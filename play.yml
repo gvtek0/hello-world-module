@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: test module
+      github_repo:
+      register: result
+    
+    - debug: var=result
